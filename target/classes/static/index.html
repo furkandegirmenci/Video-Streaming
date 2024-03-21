@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="video">
+    <video width="100%" height="auto" controls autoplay muted *ngIf="event?.video">
+        <source src="http://localhost:8080/video/id/live.mp4"
+                type="video/mp4">
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+</div>
+
+<!--
+<div class="video">
+    <video width="100%" height="auto" style = "border: 1px solid red" controls>  controls autoplay muted loop *ngIf="event?.video">         <source src="http://localhost:8080/video/live.mp4"
+                type="video/mp4">
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+</div>
+-->
+</body>
+</html>
